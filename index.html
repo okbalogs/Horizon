@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon | Weather Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="clear-day">
+    <div class="app-container">
+        <header>
+            <div class="search-bar">
+                <input type="text" id="city-input" placeholder="Search city...">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="location-toggle">
+                <button id="geo-btn">Use Current Location</button>
+            </div>
+        </header>
+
+        <main id="weather-display" class="fade-in">
+            <section class="main-stats">
+                <div class="location-info">
+                    <h1 id="city-name">London</h1>
+                    <p id="current-date">Thursday, 8 Jan</p>
+                </div>
+                <div class="temp-container">
+                    <div class="weather-main-visual">
+                        <img id="weather-icon" src="" alt="Weather Icon" class="hidden">
+                        <h2 id="current-temp">--°</h2>
+                    </div>
+                    <p id="weather-desc">--</p>
+                    <p class="feels-like">Feels like <span id="feels-like">--°</span></p>
+                </div>
+            </section>
+
+            <section class="details-grid">
+                <div class="detail-card">
+                    <span>Humidity</span>
+                    <h3 id="humidity">65%</h3>
+                </div>
+                <div class="detail-card">
+                    <span>Wind Speed</span>
+                    <h3 id="wind-speed">12 km/h</h3>
+                </div>
+                <div class="detail-card">
+                    <span>Pressure</span>
+                    <h3 id="pressure">1012 hPa</h3>
+                </div>
+                <div class="detail-card">
+                    <span>Visibility</span>
+                    <h3 id="visibility">10 km</h3>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3>5-Day Forecast</h3>
+                <div id="forecast-container" class="forecast-grid"></div>
+            </section>
+        </main>
+
+        <div id="loading" class="hidden">
+            <div class="loader"></div>
+        </div>
+
+        <div id="error-msg" class="hidden">
+            <p>City not found. Please try again.</p>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
