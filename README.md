@@ -2,8 +2,6 @@
 
 Horizon is a modern, lightweight weather application built with Vanilla JS. It features a stunning glassmorphism UI and utilizes the **Open-Meteo API** to provide accurate real-time weather data and forecasts without requiring any API keys or configuration.
 
-![Horizon Preview](https://via.placeholder.com/800x400?text=Horizon+Weather+App+Preview)
-_(Replace this link with an actual screenshot of your app)_
 
 ## 🌟 Features
 
